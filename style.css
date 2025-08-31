@@ -84,7 +84,7 @@ p{
 }
 
 .container,.container2{
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
   
   color: #ffffff;   
   letter-spacing: 0.5px;
@@ -95,7 +95,7 @@ p{
   z-index: 1;
 }
  .box1{
-  font-family: 'Dancing Script', cursive;
+  /* font-family: 'Dancing Script', cursive; */
     border: 2px solid rgb(68, 58, 58);
     background: rgb(28,32,40);
     height: 80px;
