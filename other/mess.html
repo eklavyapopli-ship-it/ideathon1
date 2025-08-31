@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mess Food Feedback</title>
+  <style>
+    .Eklavya{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        margin-bottom: 100px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000000, #000000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .feedback-form {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      width: 320px;
+      color: #fff;
+    }
+
+    .feedback-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    label {
+      font-size: 14px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    select, input, textarea {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    option {
+      color: #000;
+    }
+
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #ff6a00;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #ff8c42;
+    }
+  </style>
+</head>
+<body>
+    <div ><h1 class="Eklavya">Your Quality Feedback will help us to improve</h1>
+  <form class="feedback-form">
+    <h2>🍴 Mess Food Feedback</h2>
+    
+    <label for="name">Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    
+    <label for="meal">Meal</label>
+    <select id="meal">
+      <option>Breakfast</option>
+      <option>Lunch</option>
+      <option>Dinner</option>
+    </select>
+    
+    <label for="rating">Food Quality (1-5)</label>
+    <select id="rating">
+      <option>1 - Poor</option>
+      <option>2 - Fair</option>
+      <option>3 - Good</option>
+      <option>4 - Very Good</option>
+      <option>5 - Excellent</option>
+    </select>
+    
+    <label for="comments">Additional Comments</label>
+    <textarea id="comments" placeholder="Write your feedback..."></textarea>
+    
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</body>
+</html>

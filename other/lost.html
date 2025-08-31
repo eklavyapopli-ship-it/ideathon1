@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost and Found System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212; 
+      margin: 0;
+      padding: 0;
+      color: #f5f5f5;
+    }
+
+    header {
+      background: #1e1e1e;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      border-bottom: 2px solid #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+      color: #ffffff;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 8px 0 4px;
+      font-weight: bold;
+      color: #ddd;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #444;
+      border-radius: 5px;
+      background: #2a2a2a;
+      color: white;
+    }
+
+    button {
+      background: #4cafef;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #379cd6;
+    }
+
+    .item-list {
+      margin-top: 20px;
+    }
+
+    .item {
+      border: 1px solid #444;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      background: #ffffff; /* White item card */
+      color: #000000; /* Black text inside cards */
+    }
+
+    .item h3 {
+      margin: 0 0 8px;
+      color: #222;
+    }
+
+    .item p {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lost and Found System</h1>
+  </header>
+
+  <div class="container">
+    <h2>Report Lost or Found Item</h2>
+    <form>
+      <label for="type">Item Type:</label>
+      <select id="type">
+        <option>Lost</option>
+        <option>Found</option>
+      </select>
+
+      <label for="name">Item Name:</label>
+      <input type="text" id="name" placeholder="e.g. Wallet, ID Card">
+
+      <label for="desc">Description:</label>
+      <textarea id="desc" rows="3" placeholder="Color, brand, special marks..."></textarea>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" placeholder="Where did you lose/find it?">
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="item-list">
+      <h2>Recent Reports</h2>
+      <div class="item">
+        <h3>Lost: Black Wallet</h3>
+        <p><strong>Description:</strong> Leather wallet, contains college ID.</p>
+        <p><strong>Location:</strong> Library</p>
+      </div>
+      <div class="item">
+        <h3>Found: ID Card</h3>
+        <p><strong>Description:</strong> Blue lanyard, Computer Science Dept.</p>
+        <p><strong>Location:</strong> Near Canteen</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
